@@ -5,8 +5,8 @@
 
 <?php session_start(); ?>
 
-<div class="style-table">
-  <form action="" method="POST">
+<form action="" method="post">
+  <div class="style-table">
     <table class="table">
       <thead>
         <tr>
@@ -34,11 +34,11 @@
               <td><a href="./uploadContract.php"><button type="button" class="btn btn-primary" value="">Edit</button></a></td>
               <td><button type="submit" class="btn btn-success" name="delete" value="<?php echo $item->id ?>">Delete</button></td>
               <td><a href="./detail.php"><button type="button" class="btn btn-danger">Detail</button></a></td>
-              <td><a href="./index.php"><button type="button" class="btn btn-warning">Exit</button></a></td>
+              <td><a href="../index.php"><button type="button" class="btn btn-warning">Exit</button></a></td>
             </tr>
         <?php }
         } ?>
       </tbody>
     </table>
-  </form>
-</div>
+  </div>
+</form>

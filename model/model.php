@@ -81,9 +81,4 @@ class Model
     mysqli_query($this->conn, $sql_del);
   }
 
-  // public function updateModel($idUpdate, $editFirstName, $editLastName, $editEmail, $editPhone, $editAddress)
-  // {
-  //   $sql_update = "UPDATE contacts SET firstName = '$editFirstName', lastName = '$editLastName', email = '$editEmail', phone ='$editPhone', address = '$editAddress' WHERE id = $idUpdate";
-  //   return mysqli_query($this->conn, $sql_update);
-  // }
 }

@@ -1,0 +1,54 @@
+.edit-contact {
+  width: 500px;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+.edit-contact h3 {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px 5% 10px 5%;
+}
+
+.form-contact label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(14, 13, 13);
+}
+
+.form-contact input {
+  border: 1px solid rgb(255, 193, 0);
+  border-radius: 18px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 13px;
+}
+
+.form-contact textarea {
+  height: 100px;
+  border-radius: 18px;
+  padding-left: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-option {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-option a {
+  width: 40%;
+}
+
+.form-option a button {
+  width: 100%;
+}

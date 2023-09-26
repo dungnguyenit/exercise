@@ -12,8 +12,14 @@ class Controller
     $model->createDB();
     $model->createTable();
   }
-  public function processContact($firstName, $lastName, $email, $phone, $address)
+  public function processContact()
   {
+    require_once './view/index.php';
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
     return $this->model->createModel($firstName, $lastName, $email, $phone, $address);
     exit;
   }
@@ -28,15 +34,8 @@ class Controller
 
   public function deleteContact($id)
   {
-    $this->model->deleteModel($id);
-    require '../view/list.php';
+    require './view/list.php';
+    return $this->model->deleteModel($id);
     exit;
   }
-
-  // public function updateContact($idUpdate, $editFirstName, $editLastName, $editEmail, $editPhone, $editAddress)
-  // {
-  //   return $this->model->updateModel($idUpdate, $editFirstName, $editLastName, $editEmail, $editPhone, $editAddress);
-  //   // include 'view/listContact.php';
-  //   exit;
-  // }
 }
